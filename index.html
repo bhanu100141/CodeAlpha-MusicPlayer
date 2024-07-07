@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="music-player">
+        <div class="album-art">
+            <img id="album-image" src="music.webp" alt="Album Art">
+        </div>
+        <audio controls autoplay muted loop id="audio" src="song.mp3"></audio>
+        <div class="player-controls">
+            <button id="play-pause-btn">play</button>
+            <button id="stop-btn">Stop</button>
+            <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="1">
+            <!-- <span id="current-time">0:00</span> / <span id="duration">0:00</span> -->
+        </div>
+        <div class="song-info">
+            <h2 id="song-title">Evarevaro</h2>
+            <p id="artist">Vishal Mishra and Anantha Sriram</p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
